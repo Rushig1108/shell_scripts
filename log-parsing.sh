@@ -1,6 +1,7 @@
 #!/bin/bash
 
 log_file="$1"
+touch error.txt
 output_file="error.txt"
 
 # Search for error lines and extract timestamps
