@@ -16,3 +16,9 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 kubeadm token create --print-join-command
 
+###After Restarting instances####
+After restarting the nodes, it's possible that the PATH environment variable hasn't been set up correctly. 
+Ensure that the directory containing the kubectl executable is included in the PATH for the root user.
+You can add the directory to your PATH in the root user's shell profile 
+
+export PATH=$PATH:/path/to/kubectl/directory
