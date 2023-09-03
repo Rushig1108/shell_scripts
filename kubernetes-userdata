@@ -22,3 +22,6 @@ Ensure that the directory containing the kubectl executable is included in the P
 You can add the directory to your PATH in the root user's shell profile 
 
 export PATH=$PATH:/path/to/kubectl/directory
+
+###Refer to this article for installation###
+https://medium.com/@mehmetodabashi/installing-kubernetes-on-ubuntu-20-04-e49c43c63d0c
